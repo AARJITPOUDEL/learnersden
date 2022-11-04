@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learners Den : Sign up</title>
+    <link rel="stylesheet" href="styleindex.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+  </head>
+
+  <body>
+    <h1>Please Signin Or Singup in order to access the website.</h1>
+    <div class="form">
+      <center> <img src="logo.png" width="100px"></center>
+      <center><h3 >Create a new account</h3></center>
+      <!-- Email  -->
+      <div class="email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email"
+        />
+      </div>
+      <!-- passWord -->
+      <div class="pass">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder=" Create a new password"
+        />
+      </div>
+
+      <!-- Sign Up button -->
+      <button id="submit-btn" onclick="signUp()">Sign Up</button>
+      <!-- Sign In option -->
+      <p>Already have an account ?</p>
+      <span><a href="signIn.html">Sign In</a></span>
+    </div>
+    <footer>
+      <div class="firstfooter"> ⓒ 2022 Copyright Learners Den </a></div>
+      <div class="secondfooter"><a href="#">Privacy Policy</a></div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="firebase.js"></script>
+  </body>
+</html>
